@@ -1,0 +1,129 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+/* ===== MAIN CONTENT ===== */
+#main-content {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+/* ===== SEARCH ===== */
+.search {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 14px;
+}
+
+thead {
+    background: #eee;
+}
+
+/* ===== ACTION BUTTONS ===== */
+td.actions {
+    display: flex;
+    gap: 5px;
+}
+
+td.actions button {
+    padding: 5px;
+    border: 1px solid #000;
+    background: #ddd;
+    cursor: pointer;
+}
+
+/* ===== MODAL ===== */
+.modal,
+.modaal,
+.yate {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show,
+.modaal.show,
+.yate.open {
+    display: flex;
+}
+
+.modal-content,
+.modaal-content,
+.yate-inner {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 300px;
+}
+
+/* ===== FORM ===== */
+.form-group {
+    display: block;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* ===== BUTTON ===== */
+.save-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    background: #ccc;
+    cursor: pointer;
+}
+
+/* ===== PROFILE ===== */
+.profile-wrapper {
+    display: block;
+}
+
+.profile-avatar img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+}
+
+.info-box {
+    margin-top: 10px;
+}
+
+.info-box div {
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #main-content {
+        margin-left: 0;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+}

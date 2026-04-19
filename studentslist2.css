@@ -1,0 +1,616 @@
+    /* Global styles */
+    /* body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url('../css/img/login.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Ubuntu', sans-serif;
+        color: #f1f1f1;
+    } */
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Sans Pro', 'Ubuntu', sans-serif;
+        background-color: #f4f6f9; /* AdminLTE background */
+        color: #343a40;
+    }
+    
+    /* Main Content */
+    #main-content {
+        margin-left: 300px;
+        justify-content: center;
+        margin-top: 70px;
+        transition: all 0.3s ease;
+    }
+
+    .dashboard-row{
+        justify-content: center;
+        margin-top: 20px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+/* kung mag open ug sidebar naay margin sa left ug right*/
+   
+
+    /* Search Bar */
+    .search {
+        padding: 4px 8px;
+        width: 220px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    form i.fa-magnifying-glass {
+        color: #ccc;
+        margin-left: -28px;
+    }
+
+    /* Content row */
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* spacing between rows */
+}
+
+.table-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+/* ================= HEADER ================= */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* HEADER */
+th{
+    color: #6c757d;;
+}
+
+thead th {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    background: transparent;
+}
+
+/* ROW */
+tbody tr {
+    background: rgba(40,40,40,0.9);
+    transition: 0.3s ease;
+}
+
+/* CELLS */
+tbody tr td {
+    padding: 14px;
+    font-size: 13px;
+    color: #e6e6e6;
+    text-align: left;
+}
+
+
+/* HOVER EFFECT */
+tbody tr:hover {
+    background: rgba(255,255,255,0.08);
+    cursor: pointer;
+}
+
+
+/* Action Buttons */
+td.actions button,
+td.actions a {
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+td.actions {
+    display: flex;
+    gap: 6px;
+}
+
+td.actions button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+/* 
+td.actions button:hover {
+    transform: scale(1.15);
+} */
+
+th.actions {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Colors */
+.fa-eye {background-color: #2E7D32; color: #fff; }
+.fa-edit {background-color: #007bff; color: #fff; }
+.fa-trash {background-color: #dc3545; color: #fff; }
+
+
+/* -----------------MODAL MODERN UI-------------- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+/* BOX */
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+/* TITLE */
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* CLOSE */
+.modal .close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal .close:hover {
+    color: #ef4444;
+}
+
+/* Grid Layout */
+.modal .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Make some full width */
+.form-group-edit label[for="position"],
+.form-group-edit #edit_position,
+.form-group-edit label[for="address"],
+.form-group-edit #edit_address,
+.form-group-edit label[for="hired_at"],
+.form-group-edit #edit_hired_at {
+    grid-column: span 2;
+}
+
+/* Labels */
+.form-group-edit label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: -6px;
+}
+
+/* Inputs */
+
+
+.modal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.modal.fade-out {
+    animation: fadeOut 0.3s ease-in-out;
+}
+/* --------------END MODAL MODERN UI------------- */
+
+/* -----------------MODAAL MODERN UI------------- */
+.modaal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modaal.show {
+    display: flex;
+}
+
+/* BOX */
+.modaal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+/* TITLE */
+.modaal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* CLOSE */
+.close-edit {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-edit:hover {
+    color: #ef4444;
+}
+
+/* Grid Layout */
+.modaal .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Make some full width */
+.form-group-edit label[for="position"],
+.form-group-edit #edit_position,
+.form-group-edit label[for="address"],
+.form-group-edit #edit_address,
+.form-group-edit label[for="hired_at"],
+.form-group-edit #edit_hired_at {
+    grid-column: span 2;
+}
+
+/* Labels */
+.form-group-edit label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: -6px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: -6px;
+}
+
+/* Inputs */
+
+
+.modaal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.modaal.fade-out {
+    animation: fadeOut 0.3s ease-in-out;
+}
+/* --------------END MODAL MODERN UI------------- */
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ===== VIEW STUDENT MODAL ===== */
+/* Overlay (AdminLTE style) */
+.yate {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    z-index: 9999;
+}
+
+/* Show modal */
+.yate.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Modal Card */
+.yate-inner {
+    background: #fff;
+    width: 450px;
+    max-width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: translateY(-20px) scale(0.95);
+    transition: all 0.25s ease;
+    overflow: hidden;
+}
+
+/* Animation in */
+.yate.open .yate-inner {
+    transform: translateY(0) scale(1);
+}
+
+/* Header (AdminLTE blue bar) */
+.yate-inner h2 {
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #3c8dbc; /* AdminLTE blue */
+    color: #fff;
+    text-align: left;
+}
+
+/* Close button */
+.yate .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Body content */
+.info-box {
+    padding: 20px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Each row */
+.info-box div {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-box div:last-child {
+    border-bottom: none;
+}
+
+/* Profile Wrapper */
+/* layout container */
+.profile-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* avatar side */
+.profile-avatar {
+    flex: 0 0 120px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-avatar img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #3c8dbc;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* info side */
+.info-box {
+    flex: 1;
+    background: #f9fbfc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.info-box div {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-box div:last-child {
+    border-bottom: none;
+}
+
+.info-box strong {
+    display: inline-block;
+    width: 120px;
+    color: #555;
+}
+
+/* Labels */
+.info-box strong {
+    width: 120px;
+    display: inline-block;
+    color: #555;
+}
+
+/* ============ End of VIEW Student modal ========== */
+
+/* ===== Save Button ===== */
+.save-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+.save-btn i {
+    margin-right: 6px;
+}
+.save-btn:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+}
+.save-btn:active {
+    transform: translateY(0);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* ========================================= */
+
+
+    /* Large screens */
+@media screen and (max-width: 1656px) {
+    .modal-content {
+        margin: 7% 500px;
+    }
+}
+
+@media screen and (max-width: 1629px) {
+    .modal-content {
+        margin: 6% 450px;
+    }
+}
+
+@media screen and (max-width: 1495px) {
+    .modal-content {
+        margin: 5% 350px;
+    }
+}
+
+@media screen and (max-width: 1173px){
+    
+}
+
+/* Medium screens */
+@media screen and (max-width: 1305px) {
+    .modal-content {
+        margin: 5% 200px;
+    }
+
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+    table, th, td{
+        font-size: 12px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .modal-content {
+        margin: 5% 100px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        margin: 8% 20px;
+        width: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+
+    #main-content.open-sidebar {
+        margin-left: 100px;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 12px;
+    }
+
+    form {
+        display: left;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .modal-content {
+        margin: 10% 10px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,130 @@
+/* ================= BODY ================= */
+body {
+    z-index: 9999;
+    font-family: 'Source Sans Pro', 'Ubuntu', sans-serif;
+    background-color: #f4f6f9; /* AdminLTE background */
+    color: #343a40;
+}
+
+/* ================= TITLE ================= */
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 350px;
+    color: #343a40;
+}
+
+/* ================= CARD (ADMINLTE STYLE) ================= */
+.custom-card1,
+.custom-card2,
+.custom-card3 {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #343a40;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: relative;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+/* Colored TOP BORDERS (AdminLTE style) */
+.custom-card1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #dc3545; /* red */
+}
+
+.custom-card2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #007bff; /* blue */
+}
+
+.custom-card3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #28a745; /* green */
+}
+
+/* Hover */
+.custom-card1:hover,
+.custom-card2:hover,
+.custom-card3:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Card Text */
+.custom-card1 h6,
+.custom-card2 h6,
+.custom-card3 h6 {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.custom-card1 h2,
+.custom-card2 h2,
+.custom-card3 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ================= CHART CARD ================= */
+.chart-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+/* Header style (optional if you add title inside) */
+.chart-card h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ================= NAVBAR (ADMINLTE STYLE) ================= */
+/* .custom-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;  
+} */
+
+
+/* ================= GRID ================= */
+.row {
+    margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    #main-content2.open-sidebar {
+        margin-left: 500px;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+}
