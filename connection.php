@@ -1,8 +1,8 @@
 <?php
 $hostname = "localhost";
 $username = "root";
-$password = "0512";
-$schemaname = "sample_dbconnect";
+$password = "";
+$schemaname = "dsms";
 
 $conn = mysqli_connect($hostname, $username, $password, $schemaname);
 ?>
